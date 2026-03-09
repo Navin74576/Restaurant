@@ -1,0 +1,305 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 30px;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ff6a56;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6a56;
+}
+
+.reserve-btn {
+  background-color: #ff6a56;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reserve-btn:hover {
+  background-color: #e55039;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1555992336-03a23c16ed27?auto=format&fit=crop&w=1740&q=80') no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  background: rgba(0,0,0,0.55);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  color: white;
+  z-index: 10;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+}
+
+.hero-subtitle {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn-primary {
+  background-color: #ff6a56;
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-3px);
+}
+
+/* Sections */
+.section-header {
+  text-align: center;
+  padding: 70px 20px 30px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+.section-subtitle {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Specialties */
+.specialties-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.specialty-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.specialty-card:hover {
+  transform: translateY(-7px);
+}
+
+.specialty-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Menu */
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.category-btn {
+  background: #eee;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.category-btn.active,
+.category-btn:hover {
+  background: #ff6a56;
+  color: white;
+}
+
+.menu-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-7px);
+}
+
+.menu-image {
+  position: relative;
+  height: 180px;
+}
+
+.dish-emoji {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff6a56;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.menu-info {
+  padding: 20px;
+}
+
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.price {
+  font-weight: 700;
+  color: #ff6a56;
+}
+
+.order-btn {
+  border: 1px solid #ff6a56;
+  background: transparent;
+  color: #ff6a56;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #ff6a56;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+  }
+}

@@ -1,0 +1,126 @@
+
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Tea Stall - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Pawan Tea Stall</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#specialties" class="nav-link">Specialties</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#reservation" class="nav-link">Reservation</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="reserve-btn">Book Now</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Experience Culinary Excellence</h1>
+            <p class="hero-subtitle">Where Every Meal Tells a Story</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Explore Menu</button>
+                <button class="btn-secondary">Reserve Table</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="specialties">
+        <div class="section-header">
+            <h2 class="section-title">Our Specialties</h2>
+            <p class="section-subtitle">Crafted with passion, served with love</p>
+        </div>
+        <div class="specialties-grid">
+            <div class="specialty-card">
+                <div class="specialty-icon">🍕</div>
+                <h3>Authentic Cuisine</h3>
+                <p>Traditional recipes passed down through generations, prepared with authentic ingredients</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">👨‍🍳</div>
+                <h3>Expert Chefs</h3>
+                <p>Award-winning chefs with decades of culinary expertise from around the world</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">🌿</div>
+                <h3>Fresh Ingredients</h3>
+                <p>Locally sourced, organic ingredients delivered fresh daily to your table</p>
+            </div>
+            <div class="specialty-card">
+                <div class="specialty-icon">✨</div>
+                <h3>Premium Experience</h3>
+                <p>Elegant ambiance and exceptional service for unforgettable dining moments</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="section-header">
+            <h2 class="section-title">Signature Dishes</h2>
+            <p class="section-subtitle">A taste of perfection in every bite</p>
+        </div>
+        <div class="menu-categories">
+            <button class="category-btn active">All</button>
+            <button class="category-btn">Starters</button>
+            <button class="category-btn">Main Course</button>
+            <button class="category-btn">Desserts</button>
+            <button class="category-btn">Beverages</button>
+        </div>
+        <div class="menu-grid">
+            <div class="menu-card" data-category="starters">
+                <div class="menu-image">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a56 100%);">
+                        <span class="dish-emoji">🥗</span>
+                    </div>
+                    <div class="menu-badge">Popular</div>
+                </div>
+                <div class="menu-info">
+                    <h3>Garden Fresh Salad</h3>
+                    <p>Crisp vegetables with house-made vinaigrette</p>
+                    <div class="menu-footer">
+                        <span class="price">₹180</span>
+                        <button class="order-btn">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="main">
+                <div class="menu-image">
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="dish-emoji">🍛</span>
+                    </div>
+                    <div class="menu-badge">Chef's Special</div>
+                </div>
+                <div class="menu-info">
+                    <h3>Royal Biryani</h3>
+                    <script src="js/script.js"></script>
+</body>
+</html>
